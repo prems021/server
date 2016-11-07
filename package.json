@@ -1,0 +1,24 @@
+{
+  "name": "p-jwt",
+  "version": "1.0.0",
+  "description": "jwt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "premji",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.7.1",
+    "express": "^4.14.0",
+    "jwt-simple": "^0.5.0",
+    "mongodb": "^2.2.5",
+    "mongoose": "^4.5.8",
+    "morgan": "^1.7.0",
+    "mysql": "^2.11.1",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.1.0",
+    "sequelize": "^3.24.1"
+  }
+}
