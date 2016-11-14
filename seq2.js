@@ -430,6 +430,42 @@ sdb_pm.sync({force: true}).then(function () {
           return res.json({success:true, msg:'You booked for the day'});
 });
 
+app.post('/api/makedonation', function(req, res)
+
+{
+ 
+
+
+
+});
+
+app.post('/api/reports', function(req,res)
+{
+  
+ var Player = sequelize.import(__dirname + "/models/sdb_player")
+ 
+ 
+var Team = sequelize.import(__dirname + "/models/sdb_teams")
+ 
+ 
+ Player.belongsTo(Team);
+
+sequelize.sync().then(function() {
+  
+
+Player.findAll({ include: [ Team ] }).then(function(tasks) {
+  console.log(JSON.stringify(tasks))
+   res.send(tasks);
+})
+
+});
+
+
+});
+
+
+
+
      /*   
  var Player = sequelize.import(__dirname + "/models/sdb_player")
  
